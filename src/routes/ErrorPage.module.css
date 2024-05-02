@@ -1,0 +1,22 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+
+  max-width: 500px;
+  margin: 13rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #2B3566;
+}
+
+.error h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.error h2 {
+  font-size: 1rem;
+}
