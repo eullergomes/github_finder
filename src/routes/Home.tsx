@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import Search from '../components/Search';
 import User from '../components/User';
+import ErrorRequest from '../components/ErrorRequest'
 
 const Home = () => {
   const [user, setUser] = useState<UserProps | null>(null);
@@ -13,7 +14,7 @@ const Home = () => {
       const response = await fetch(`https://api.github.com/users/${userName}`);
 
       if (!response.ok) {
-        throw new Error('Usuário não encontrado');
+        throw new Error('ERRO: você excedeu o limite de pesquisas diárias! Tente novamente mais tarde.');
       }
 
       const data = await response.json();
@@ -45,7 +46,7 @@ const Home = () => {
     <div>
       <Search loadUser={loadUser} />
       {error ? (
-        <div className="error-message">{error}</div>
+        <ErrorRequest error={error} />
       ) : user ? (
         <User {...user} />
       ) : null}

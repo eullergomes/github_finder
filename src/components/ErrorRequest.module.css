@@ -1,0 +1,21 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+
+  background-color: #F9A826;
+  border-radius: .5rem;
+  padding: 12px;
+}
+
+.error svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.error p {
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+}

@@ -16,6 +16,16 @@
   border-radius: 50%;
 }
 
+.user a:first-of-type {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.user a:first-of-type:hover {
+  color: #F9A826;
+}
+
 .location {
   display: flex;
   align-items: center;
@@ -53,7 +63,7 @@
   border-radius: 3px;
 }
 
-.user a {
+.viewRepos {
   text-align: center;
   background-color: #644aff;
   padding: 1rem;
@@ -62,6 +72,6 @@
   transition: .3s;
 }
 
-.user a:hover {
+.viewRepos:hover {
   opacity: 1;
 }

@@ -1,8 +1,16 @@
 const Footer = () => {
   return ( 
-    <footer className="footer">
-      <div className="container">
-        <p>&copy; 2024 All rights reserved.</p>
+    <footer>
+      <div style={{marginTop: '1rem'}}>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+        <p>By <a 
+                style={{color: '#646AD7'}} 
+                href="https://github.com/eullergomes"
+                target='_blank'  
+              >
+                  Euller Gomes
+              </a>
+        </p>
       </div>
     </footer>
    );

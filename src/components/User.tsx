@@ -16,7 +16,7 @@ const User = ({
   return (
     <div className={classes.user}>
       <img src={avatar_url} alt={login} />
-      <h2>{login}</h2>
+      <a href={`https://github.com/${login}`} target='_blank'>{login}</a>
       { location && (
         <p className={classes.location}>
           <MdLocationPin />
@@ -34,7 +34,7 @@ const User = ({
         </div>
       </div>
 
-      <Link to={`repos/${login}`}>Ver os melhores projetos</Link>
+      <Link to={`repos/${login}`} className={classes.viewRepos}>Ver os melhores projetos</Link>
     </div>
   )
 }
