@@ -34,7 +34,7 @@ const User = ({
         </div>
       </div>
 
-      <Link to={`repos/${login}`} className={classes.viewRepos}>Ver os melhores projetos</Link>
+      <Link to={`repos/${login}`} className={classes.viewRepos}>Ver repositórios</Link>
     </div>
   )
 }

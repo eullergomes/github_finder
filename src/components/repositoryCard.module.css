@@ -1,0 +1,22 @@
+.repos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+
+  padding: .5rem;
+  width: 13rem;
+  height: 5rem;
+  border-radius: 10px;
+  background-color: #b1afac;
+}
+
+.repos:hover {
+  opacity: .9;
+}
+
+@media only screen and (max-width: 568px) {
+  .repos {
+    width: 100%;
+  }
+}

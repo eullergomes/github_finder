@@ -14,13 +14,13 @@ const Home = () => {
       const response = await fetch(`https://api.github.com/users/${userName}`);
 
       if (!response.ok) {
-        throw new Error('ERRO: você excedeu o limite de pesquisas diárias! Tente novamente mais tarde.');
+        throw new Error('ERRO: usuário não encontrado!');
       }
 
       const data = await response.json();
 
       if (!data || data.message === 'Not Found') {
-        throw new Error('Usuário não encontrado');
+        throw new Error('ERRO: usuário não encontrado!');
       }
 
       const { avatar_url, login, location, followers, following } = data;
